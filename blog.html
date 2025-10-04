@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Your Brand</title>
+    <style>
+        :root {
+            --color-contrast-dark: rgb(159, 127, 89);
+            --color-contrast-light: rgb(208, 186, 161);
+            --color-light: rgb(227, 227, 227);
+            --color-medium: rgb(41, 38, 38);
+            --color-dark: rgb(31, 29, 29);
+            --border: 1px solid #393939;
+            --spacing-xs: 1.2rem;
+            --spacing-sm: 2rem;
+            --spacing-md: 3.2rem;
+            --spacing-lg: 4rem;
+            --spacing-xl: 7.2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--color-dark);
+            color: var(--color-light);
+            font-size: 1.8rem;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--color-dark);
+            border-bottom: var(--border);
+            z-index: 1000;
+            padding: 1.6rem 4rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--color-light);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--color-contrast-light);
+            text-decoration: none;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+            font-weight: 700;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-light);
+            border-bottom: 1px solid var(--color-light);
+        }
+
+        /* Hero */
+        .page-hero {
+            position: relative;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23151515" width="1200" height="400"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .page-hero h1 {
+            font-size: 6rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            text-align: center;
+        }
+
+        /* News Container */
+        .news-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-xl) 4rem;
+        }
+
+        /* News Item */
+        .news-item {
+            border-bottom: var(--border);
+            padding: var(--spacing-md) 0;
+            transition: background-color 0.3s;
+        }
+
+        .news-item:hover {
+            background-color: rgba(41, 38, 38, 0.3);
+        }
+
+        .news-date {
+            font-size: 1.3rem;
+            color: var(--color-contrast-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .news-item h2 {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            color: var(--color-light);
+            line-height: 1.3;
+        }
+
+        .news-item h2 a {
+            color: var(--color-light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .news-item h2 a:hover {
+            color: var(--color-contrast-light);
+        }
+
+        .news-excerpt {
+            font-size: 1.6rem;
+            color: var(--color-contrast-light);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            color: var(--color-contrast-light);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--color-contrast-light);
+            padding-bottom: 2px;
+            transition: color 0.3s;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .read-more:hover {
+            color: var(--color-light);
+            border-color: var(--color-light);
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: var(--spacing-xl);
+            padding-bottom: var(--spacing-xl);
+        }
+
+        .pagination a,
+        .pagination span {
+            padding: 1rem 1.5rem;
+            background-color: var(--color-medium);
+            color: var(--color-contrast-light);
+            text-decoration: none;
+            font-size: 1.4rem;
+            transition: all 0.3s;
+            border: var(--border);
+        }
+
+        .pagination a:hover,
+        .pagination span.current {
+            background-color: var(--color-contrast-dark);
+            color: var(--color-dark);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-dark);
+            padding: 4rem;
+            text-align: center;
+            border-top: var(--border);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--color-contrast-light);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-light);
+            border-bottom: 1px solid;
+        }
+
+        .copyright {
+            color: var(--color-contrast-light);
+            font-size: 1.3rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+                font-size: 1.1rem;
+            }
+
+            .news-container {
+                padding: var(--spacing-md) 2rem;
+            }
+
+            header {
+                padding: 1.6rem 2rem;
+            }
+
+            .news-item h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Your Brand</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>News</h1>
+    </section>
+
+    <div class="news-container">
+        <article class="news-item">
+            <div class="news-date">2025-10-03</div>
+            <h2><a href="#">Major Game Expansion Announced – New Adventures Await</a></h2>
+            <p class="news-excerpt">We're excited to announce a major expansion for our flagship game, bringing new mechanics, characters, and endless possibilities for epic storytelling.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+
+        <article class="news-item">
+            <div class="news-date">2025-09-28</div>
+            <h2><a href="#">Community Spotlight: Amazing Fan-Created Content</a></h2>
+            <p class="news-excerpt">Check out the incredible adventures and supplements our community has been creating. Your creativity continues to inspire us every day.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+
+        <article class="news-item">
+            <div class="news-date">2025-09-15</div>
+            <h2><a href="#">New Starter Set Now Available – Perfect for Beginners</a></h2>
+            <p class="news-excerpt">Introducing our comprehensive starter set designed to make it easier than ever to jump into tabletop roleplaying. Everything you need in one box.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+
+        <article class="news-item">
+            <div class="news-date">2025-09-01</div>
+            <h2><a href="#">Convention Schedule Announced for Fall 2025</a></h2>
+            <p class="news-excerpt">Join us at conventions across the country this fall. Meet the team, try new games, and connect with fellow players.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+
+        <article class="news-item">
+            <div class="news-date">2025-08-20</div>
+            <h2><a href="#">Award-Winning Game Receives Critical Acclaim</a></h2>
+            <p class="news-excerpt">We're honored to announce that our latest release has won multiple awards and received outstanding reviews from players and critics alike.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+
+        <article class="news-item">
+            <div class="news-date">2025-08-05</div>
+            <h2><a href="#">Behind the Scenes: Meet Our Design Team</a></h2>
+            <p class="news-excerpt">Go behind the curtain and learn about the creative process from the talented designers who bring our worlds to life.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+
+        <div class="pagination">
+            <span class="current">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next →</a>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+        <p class="copyright">© 2025 Your Publishing Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
