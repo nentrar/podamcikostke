@@ -157,6 +157,22 @@ nav {
     text-align: center;
 }
 
+.page-hero.blog {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+                url('/assets/images/blog-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-hero.about {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+                url('/assets/images/about-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .game-hero {
     position: relative;
     height: 70vh;
