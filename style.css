@@ -44,7 +44,7 @@ header {
     background-color: var(--color-dark);
     border-bottom: var(--border);
     z-index: 1000;
-    padding: 1.6rem 4rem;
+    padding: 1.6rem 8rem;
 }
 
 nav {
@@ -89,7 +89,7 @@ nav {
 
 /* Breadcrumbs */
 .breadcrumbs {
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 8rem;
     border-bottom: var(--border);
     font-size: 1.3rem;
     color: var(--color-contrast-light);
@@ -117,7 +117,7 @@ nav {
 }
 
 .hero-content {
-    padding: 0 4rem 4rem;
+    padding: 0 8rem 8rem;
     max-width: 600px;
 }
 
@@ -182,7 +182,11 @@ nav {
     background-position: center;
     display: flex;
     align-items: flex-end;
-    padding: 0 4rem 4rem;
+    padding: 0 8rem 8rem;
+}
+
+.game-hero h1 {
+    font-size: 7rem;
 }
 
 .game-hero-logo {
@@ -224,7 +228,7 @@ nav {
 
 /* Sections */
 .section {
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
     border-top: var(--border);
 }
 
@@ -244,7 +248,7 @@ nav {
 .content-section {
     max-width: 900px;
     margin: 0 auto;
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
 }
 
 .content-section h2 {
@@ -287,7 +291,7 @@ nav {
     gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
     border-top: var(--border);
 }
 
@@ -388,7 +392,7 @@ nav {
 .news-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
 }
 
 .news-item {
@@ -517,7 +521,7 @@ nav {
 /* Values Section */
 .values-section {
     background: linear-gradient(var(--color-medium), var(--color-dark));
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
     border-top: var(--border);
 }
 
@@ -552,7 +556,7 @@ nav {
 /* CTA Section */
 .cta-section {
     background-color: var(--color-contrast-dark);
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
     text-align: center;
 }
 
@@ -580,7 +584,7 @@ nav {
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 0;
+    gap: 2rem;
 }
 
 .game-card {
@@ -692,7 +696,7 @@ nav {
 /* Single Game Page */
 .game-info-bar {
     background-color: var(--color-medium);
-    padding: 2rem 4rem;
+    padding: 2rem 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -702,7 +706,7 @@ nav {
 .game-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
 }
 
 .game-intro {
@@ -755,7 +759,7 @@ nav {
 /* Awards Section */
 .awards-section {
     background: linear-gradient(var(--color-medium), var(--color-dark));
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
     text-align: center;
     border-top: var(--border);
 }
@@ -791,7 +795,7 @@ nav {
 
 /* Quotes Section */
 .quotes-section {
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
     background-color: var(--color-dark);
 }
 
@@ -820,7 +824,7 @@ nav {
 
 /* Gallery */
 .gallery-section {
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
     border-top: var(--border);
 }
 
@@ -845,7 +849,7 @@ nav {
 /* Creator Section */
 .creator-section {
     background-color: var(--color-medium);
-    padding: var(--spacing-xl) 4rem;
+    padding: var(--spacing-xl) 8rem;
     border-top: var(--border);
 }
 
@@ -872,7 +876,7 @@ nav {
 /* Footer */
 footer {
     background-color: var(--color-dark);
-    padding: 4rem;
+    padding: 8rem;
     text-align: center;
     border-top: var(--border);
 }
