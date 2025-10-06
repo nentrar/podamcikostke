@@ -909,6 +909,243 @@ footer {
     font-size: 1.3rem;
 }
 
+/* Single Blog Post Styles - Add these to your style.css */
+
+.blog-post {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) 4rem;
+}
+
+.blog-post-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: var(--border);
+}
+
+.blog-post-meta {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-post-date,
+.blog-post-category {
+    font-size: 1.3rem;
+    color: var(--color-contrast-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.blog-post-title {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-light);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.blog-post-intro {
+    font-size: 2rem;
+    line-height: 1.6;
+    color: var(--color-contrast-light);
+    font-style: italic;
+    margin-top: var(--spacing-md);
+}
+
+.blog-post-featured-image {
+    width: 100%;
+    margin-bottom: var(--spacing-xl);
+    overflow: hidden;
+}
+
+.blog-post-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-post-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.blog-post-content h2 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.blog-post-content p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--color-contrast-light);
+    text-align: center;
+}
+
+.blog-post-content ul,
+.blog-post-content ol {
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+}
+
+.blog-post-content li {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: var(--color-contrast-light);
+    margin-bottom: 1rem;
+}
+
+.blog-post-quote {
+    background-color: var(--color-medium);
+    padding: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    border-left: 4px solid var(--color-contrast-dark);
+    text-align: center;
+}
+
+.blog-post-quote p {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    color: var(--color-light);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.blog-post-quote cite {
+    font-size: 1.4rem;
+    color: var(--color-contrast-light);
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.blog-post-footer {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: var(--border);
+}
+
+.blog-post-share {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.blog-post-share h3 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-contrast-light);
+}
+
+.share-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.share-btn {
+    padding: 1rem 2rem;
+    background-color: var(--color-medium);
+    color: var(--color-contrast-light);
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: var(--border);
+    transition: all 0.3s;
+}
+
+.share-btn:hover {
+    background-color: var(--color-contrast-dark);
+    color: var(--color-dark);
+}
+
+.blog-post-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-previous,
+.nav-next,
+.nav-back {
+    color: var(--color-contrast-light);
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-previous:hover,
+.nav-next:hover,
+.nav-back:hover {
+    color: var(--color-light);
+}
+
+.nav-back {
+    color: var(--color-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-post {
+        padding: var(--spacing-md) 2rem;
+    }
+
+    .blog-post-title {
+        font-size: 2.8rem;
+    }
+
+    .blog-post-intro {
+        font-size: 1.6rem;
+    }
+
+    .blog-post-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .blog-post-content p,
+    .blog-post-content li {
+        font-size: 1.6rem;
+    }
+
+    .blog-post-quote p {
+        font-size: 1.8rem;
+    }
+
+    .blog-post-navigation {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .share-buttons {
+        flex-direction: column;
+    }
+
+    .share-btn {
+        width: 100%;
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .games-grid {
