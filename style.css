@@ -4,12 +4,13 @@
  */
 
 :root {
-    --color-contrast-dark: rgb(159, 127, 89);
-    --color-contrast-light: rgb(208, 186, 161);
-    --color-light: rgb(227, 227, 227);
-    --color-medium: rgb(41, 38, 38);
-    --color-dark: rgb(31, 29, 29);
-    --border: 1px solid #393939;
+    --color-contrast-dark: #d1495b;      /* Berry red - for primary buttons/CTAs */
+    --color-contrast-light: #edae49;     /* Golden yellow - for links and accents */
+    --color-light: #f4f1de;              /* Cream white for text */
+    --color-medium: #30638e;             /* Ocean blue - for cards */
+    --color-dark: #003d5b;               /* Deep navy - main background */
+    --color-accent: #00798c;             /* Teal - for special elements */
+    --border: 1px solid rgba(237, 174, 73, 0.3);
     --spacing-xs: 1.2rem;
     --spacing-sm: 2rem;
     --spacing-md: 3.2rem;
@@ -110,8 +111,8 @@ nav {
     height: 85vh;
     display: flex;
     align-items: flex-end;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23151515" width="1200" height="800"/><text x="50%" y="50%" font-size="60" fill="%23333" text-anchor="middle" dominant-baseline="middle" font-family="serif">HERO IMAGE PLACEHOLDER</text></svg>');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
+            url('/assets/images/hero-image.png');
     background-size: cover;
     background-position: center;
 }
@@ -644,7 +645,7 @@ nav {
 }
 
 .game-content {
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .game-title {
@@ -655,9 +656,9 @@ nav {
 }
 
 .game-description {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--color-contrast-light);
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 1.5rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -717,7 +718,7 @@ nav {
     color: var(--color-light);
 }
 
-.game-description {
+.single-game-description {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
@@ -1104,6 +1105,98 @@ footer {
     color: var(--color-light);
 }
 
+/* Instagram Feed Section Styles
+   Add this to your style.css file */
+
+.instagram-section {
+    background: var(--color-dark);
+    padding: var(--spacing-xl) 8rem;
+    border-top: var(--border);
+}
+
+.instagram-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.instagram-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.instagram-header .section-title {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    color: var(--color-contrast-light);
+    letter-spacing: 2px;
+}
+
+.instagram-subtitle {
+    font-size: 1.6rem;
+    color: var(--color-contrast-light);
+    font-style: italic;
+}
+
+/* Instagram Grid */
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.instagram-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-item:hover {
+    transform: scale(1.05);
+}
+
+.instagram-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-medium);
+    position: relative;
+}
+
+/* Hover Overlay Effect */
+.instagram-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 61, 91, 0.85); /* Using your Ocean Depths dark color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.instagram-item:hover .instagram-overlay {
+    opacity: 1;
+}
+
+.instagram-icon {
+    font-size: 4rem;
+    filter: grayscale(1) brightness(2);
+}
+
+/* CTA Button */
+.instagram-cta {
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .blog-post {
@@ -1233,5 +1326,30 @@ footer {
     .btn-secondary {
         margin-left: 0;
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .instagram-section {
+        padding: var(--spacing-md) 2rem;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .instagram-header .section-title {
+        font-size: 2.4rem;
+    }
+
+    .instagram-subtitle {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-grid {
+        grid-template-columns: 1fr;
     }
 }
