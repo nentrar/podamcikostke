@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "head.html" %}
+</head>
+<body>
+    {% include "header.html" %}
+
+    <article class="blog-post">
+        <div class="blog-post-header">
+            <div class="blog-post-meta">
+                <span class="blog-post-date">{{ date | date: "%B %d, %Y" }}</span>
+                <span class="blog-post-category">{{ category }}</span>
+            </div>
+            <h1 class="blog-post-title">{{ title }}</h1>
+            <p class="blog-post-intro">{{ intro }}</p>
+        </div>
+
+        <div class="blog-post-featured-image">
+            <img src="{{ featuredImage }}" alt="{{ title }}">
+        </div>
+
+        <div class="blog-post-content">
+            {{ content }}
+        </div>
+
+        <footer class="blog-post-footer">
+            <!-- <div class="blog-post-share">
+                <h3>Share this article</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn">Facebook</a>
+                    <a href="#" class="share-btn">Twitter</a>
+                    <a href="#" class="share-btn">LinkedIn</a>
+                </div>
+            </div> -->
+
+            <div class="blog-post-navigation">
+    {% assign sortedPosts = collections.posts | sort: 'date' | reverse %}
+    {% assign currentIndex = 0 %}
+    
+    {% for post in sortedPosts %}
+        {% if post.url == page.url %}
+            {% assign currentIndex = forloop.index0 %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    
+    {% assign prevIndex = currentIndex | plus: 1 %}
+    {% assign nextIndex = currentIndex | minus: 1 %}
+    
+    {% if prevIndex < sortedPosts.size %}
+        {% assign previousPost = sortedPosts[prevIndex] %}
+        <a href="{{ previousPost.url }}" class="nav-previous">← Poprzedni post</a>
+    {% else %}
+        <span class="nav-previous" style="opacity: 0.3; cursor: default;">← Poprzedni post</span>
+    {% endif %}
+    
+    <a href="/blog/" class="nav-back">Powrót do bloga</a>
+    
+    {% if nextIndex >= 0 %}
+        {% assign nextPost = sortedPosts[nextIndex] %}
+        <a href="{{ nextPost.url }}" class="nav-next">Następny post →</a>
+    {% else %}
+        <span class="nav-next" style="opacity: 0.3; cursor: default;">Następny post →</span>
+    {% endif %}
+</div>
+        </footer>
+    </article>
+
+    {% include "footer.html" %}
+</body>
+</html>
