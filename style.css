@@ -4,13 +4,15 @@
  */
 
 :root {
-    --color-contrast-dark: #d1495b;      /* Berry red - for primary buttons/CTAs */
-    --color-contrast-light: #edae49;     /* Golden yellow - for links and accents */
-    --color-light: #f4f1de;              /* Cream white for text */
-    --color-medium: #30638e;             /* Ocean blue - for cards */
-    --color-dark: #003d5b;               /* Deep navy - main background */
-    --color-accent: #00798c;             /* Teal - for special elements */
-    --border: 1px solid rgba(237, 174, 73, 0.3);
+    --color-light: #1a1a1a;              /* Near-black - now used for TEXT */
+    --color-medium: #f8f9fa;             /* Light gray - cards */
+    --color-dark: #ffffff;               /* White - now used for BACKGROUNDS */
+    
+    --color-accent: #00798c;             /* Teal - buttons/links */
+    --color-contrast-dark: #005f6b;      /* Darker teal - hovers */
+    --color-contrast-light: #666666;     /* Gray - body text */
+    
+    --border: 1px solid #e0e0e0;
     --spacing-xs: 1.2rem;
     --spacing-sm: 2rem;
     --spacing-md: 3.2rem;
@@ -130,12 +132,13 @@ nav {
     text-transform: uppercase;
     letter-spacing: 6px;
     line-height: 1.1;
+    color: var(--color-dark);
 }
 
 .hero p {
     font-size: 1.8rem;
     margin-bottom: 2.5rem;
-    color: var(--color-light);
+    color: var(--color-dark);
 }
 
 .page-hero {
@@ -156,6 +159,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 6px;
     text-align: center;
+    color: var(--color-dark);
 }
 
 .page-hero.blog {
@@ -188,6 +192,8 @@ nav {
 
 .game-hero h1 {
     font-size: 7rem;
+    color: var(--color-dark);
+
 }
 
 .game-hero-logo {
