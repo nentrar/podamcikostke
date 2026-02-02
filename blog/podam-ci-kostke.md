@@ -12,8 +12,7 @@ Witaj w projekcie, w którym chciałbym wyjąć z "szuflady" moje scenariusze do
 
 ## Kolejna podróż, pełna przygód
 
-Podam Ci Kostkę! to mój nowy projekt, zastępujący niejako poprzedni - **Sekretną Biblioteczkę**. Był to blog na którym pisałem eseje poświęcone literaturze. Prowadziłem go w latach
-2016-2024 i w pewnym momencie zapragnąłem stworzyć coś innego, jednocześnie bardziej kreatywnego. Poświęconego pasji, którą mam od ponad 20 lat nieprzerwanie. A mianowicie grom fabularnym czyli RPG.
+Podam Ci Kostkę! to mój nowy projekt, zastępujący niejako poprzedni - **Sekretną Biblioteczkę**. Był to blog na którym pisałem eseje poświęcone literaturze. Prowadziłem go w latach 2016-2024 i w pewnym momencie zapragnąłem stworzyć coś innego, jednocześnie bardziej kreatywnego. Poświęconego pasji, którą mam od ponad 20 lat nieprzerwanie. A mianowicie grom fabularnym czyli RPG.
 
 Przez dwie dekady bycia graczem, a później już mistrzem gry, stworzyłem dużą ilość **scenariuszy własnych, postaci, przedmiotów czy różnych innych pomocy**. Niektóre były tylko cyfrowe, a inne z kolei tylko fizyczne. Elementy rozgrywki, które gracze mogli dotknąć i faktycznie poczuć **immersję świata przedstawionego opowieści**. Teraz, na łamach tego projektu chciałbym się nimi podzielić, zarówno tymi już gotowymi, jak i takimi, które dopiero tworzę. Oczywiście muszę je wpierw przygotować pod "wydanie", bo przy inaczej jest pisać coś dla siebie, a inaczej - tak aby ktoś inny mógł z tego skorzystać. Nie zajmuje się profesjonalnie składem, dlatego tu również bedzie zapewne wiele prób i błędów. 
 
