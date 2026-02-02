@@ -170,9 +170,17 @@ nav {
     background-position: center;
 }
 
+.page-hero.scenarios {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+                url('/assets/images/scenario-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .page-hero.about {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
-                url('/assets/images/about-image.jpg');
+                url('/assets/images/about-image.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -181,8 +189,6 @@ nav {
 .game-hero {
     position: relative;
     height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700"><rect fill="%23151515" width="1200" height="700"/><text x="50%" y="50%" font-size="40" fill="%23333" text-anchor="middle" dominant-baseline="middle" font-family="serif">HERO IMAGE</text></svg>');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -205,7 +211,7 @@ nav {
 .btn {
     display: inline-block;
     padding: 1.6rem 2rem;
-    background-color: var(--color-contrast-dark);
+    background-color: var(--color-light);
     color: var(--color-dark);
     text-decoration: none;
     text-transform: uppercase;
