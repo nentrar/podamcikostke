@@ -197,7 +197,7 @@ nav {
 }
 
 .game-hero h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     color: var(--color-dark);
 
 }
@@ -741,8 +741,6 @@ nav {
 }
 
 .single-game-description {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     gap: 4rem;
     margin-bottom: var(--spacing-xl);
 }
