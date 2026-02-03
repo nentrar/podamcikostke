@@ -1283,6 +1283,10 @@ footer {
         max-width: 300px;
     }
 
+    nav {
+        display: grid;
+    }
+
     .nav-links {
         gap: 1.5rem;
         font-size: 1.1rem;
