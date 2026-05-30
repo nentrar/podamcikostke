@@ -4,3 +4,25 @@
     </ul> -->
     <p class="copyright">© 2026 Podam Ci Kostkę. Wszystkie prawa zastrzeżone.</p>
 </footer>
+<script>
+async function loadDownloadCounts() {
+  const btns = document.querySelectorAll('[data-scenario]');
+  for (const btn of btns) {
+    const scenario = btn.dataset.scenario;
+    try {
+      const res = await fetch(`/api/download-count?scenario=${scenario}`);
+      const { count } = await res.json();
+      const el = document.getElementById(`count-${scenario}`);
+      if (el && count > 0) el.textContent = `(${count})`;
+    } catch (e) {}
+  }
+}
+
+async function trackDownload(scenario) {
+  try {
+    await fetch(`/api/download-count?scenario=${scenario}&action=increment`);
+  } catch (e) {}
+}
+
+loadDownloadCounts();
+</script>
