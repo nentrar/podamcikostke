@@ -13,7 +13,7 @@ async function loadDownloadCounts() {
       const res = await fetch(`/api/download-count?scenario=${scenario}`);
       const { count } = await res.json();
       const el = document.getElementById(`count-${scenario}`);
-      if (el && count > 0) el.textContent = `(${count})`;
+      if (el && count > 0) el.textContent = `Pobrano ${count} razy`;
     } catch (e) {}
   }
 }
