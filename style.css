@@ -701,6 +701,14 @@ nav {
     font-weight: 700;
 }
 
+.download-count {
+    font-size: 1.2rem;
+    color: var(--color-contrast-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
 .game-image-placeholder {
     position: absolute;
     top: 0;
