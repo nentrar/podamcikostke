@@ -1,7 +1,7 @@
 ---
 layout: single-post.html
 title: InteGRAcja RPG
-intro: Metoda integracji wychowanków placówek wsparcia dziennego
+intro: Metoda integracji młodzieży w placówkach wsparcia dziennego
 date: 2026-08-17
 category: Projekty
 featuredImage: /assets/images/blog/integracja-work-in-progress.jpg
