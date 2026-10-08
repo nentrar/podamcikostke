@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("style.css");
 
     eleventyConfig.addCollection("posts", function(collectionApi) {
-        return collectionApi.getFilteredByTag("post").sort((a, b) => {
+        return collectionApi.getFilteredByTag("posts").sort((a, b) => {
             return b.date - a.date; 
         });
     });
