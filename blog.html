@@ -13,30 +13,16 @@
 
     <div class="news-container">
 
-        <a href="/blog/integracja-rpg/" class="news-item-link">
-    <div class="news-item">
-        <div class="news-date">2026-08-17</div>
-        <h2>InteGRAcja RPG</h2>
-        <p class="news-excerpt">Metoda integracji młodzieży w placówkach wsparcia dziennego, tworzona w ramach inkubatora pomysłów.</p>
-        <span class="read-more">Przeczytaj →</span>
-    </div>
-</a>
-        <a href="/blog/uwiezieni-w-glebinach/" class="news-item-link">
-    <div class="news-item">
-        <div class="news-date">2026-02-09</div>
-        <h2>Uwięzieni w głębinach</h2>
-        <p class="news-excerpt">One-shot do Zewu Cthulhu</p>
-        <span class="read-more">Przeczytaj →</span>
-    </div>
-</a>
-        <a href="/blog/podam-ci-kostke/" class="news-item-link">
-    <div class="news-item">
-        <div class="news-date">2026-02-05</div>
-        <h2>Przed wyruszeniem w drogę</h2>
-        <p class="news-excerpt">Kości zostały rzucone i projekt "Podam Ci Kostkę" startuje! Zajrzyj, by poznać jego założenia i zobaczyć, co szykuję dla fanów RPG.</p>
-        <span class="read-more">Przeczytaj →</span>
-    </div>
-</a>
+     {% for post in collections.posts %}
+    <a href="{{ post.url }}" class="news-item-link">
+        <div class="news-item">
+            <div class="news-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+            <h2>{{ post.data.title }}</h2>
+            <p class="news-excerpt">{{ post.data.intro }}</p>
+            <span class="read-more">Przeczytaj →</span>
+        </div>
+    </a>
+    {% endfor %}
         
         <!--
         <article class="news-item">
