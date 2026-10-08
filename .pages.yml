@@ -27,7 +27,7 @@ content:
         label: Category
         type: select
         options:
-          values: [Projekty, Ogłoszenia]
+          values: [Projekty, Ogłoszenia, Scenariusze, Pomysły]
       - name: featuredImage
         label: Featured image
         type: image
