@@ -1,10 +1,20 @@
-<footer>
-    <!-- <ul class="footer-links">
-        <li><a href="#">Kontakt</a></li>
-    </ul> -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="footer-brand" href="/"><img src="/assets/images/dice-icon-reversed.png" alt="" aria-hidden="true">PODAM CI KOSTKĘ</a>
+    <div class="footer-links"><a href="/scenarios/">Scenariusze</a><a href="/blog/">Blog</a><a href="/about/">O mnie</a><a href="/contact/">Kontakt</a></div>
     <p class="copyright">© 2026 Podam Ci Kostkę. Wszystkie prawa zastrzeżone.</p>
+  </div>
 </footer>
 <script>
+(function () {
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelector('.nav-links');
+  if (toggle && links) toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    links.classList.toggle('is-open', !open);
+  });
+})();
 async function loadDownloadCounts() {
   const btns = document.querySelectorAll('[data-scenario]');
   for (const btn of btns) {
@@ -17,12 +27,8 @@ async function loadDownloadCounts() {
     } catch (e) {}
   }
 }
-
 async function trackDownload(scenario) {
-  try {
-    await fetch(`/api/download-count?scenario=${scenario}&action=increment`);
-  } catch (e) {}
+  try { await fetch(`/api/download-count?scenario=${scenario}&action=increment`); } catch (e) {}
 }
-
 loadDownloadCounts();
 </script>

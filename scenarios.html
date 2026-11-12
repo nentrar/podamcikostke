@@ -1,71 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    {% include "head.html" %}
-</head>
+<html lang="pl">
+<head>{% include "head.html" %}</head>
 <body>
-    {% include "header.html" %}
-
-    <section class="page-hero scenarios">
-        <h1>Scenariusze</h1>
-    </section>
-
-    <div class="games-container">
-        <div class="games-grid">
-            <!-- Game Card 1 -->
-            <!-- <div class="game-card">
-                <a href="/single-scenario/">
-                    <div class="game-image-container">
-                        <div class="game-image-placeholder" style="background-image: url('/assets/images/scenarios/wyspa.jpg'); background-size: cover; background-position: center;"></div>
-                        </div>
-                    <div class="game-content">
-                        <h2 class="game-title">Tajemnica wyspy Wraków</h2>
-                        <p class="game-description">Tajemnicze zło przejeło kontrolę nad Wyspą Wraków. Zaniepokojeni tymi wydarzeniami Harfiarze postanowili działać. Wysyłają grupę swoich najmłodszych rekrutów, by zbadała sytuację i odkryła prawdę kryjącą się za nagłą izolacją wyspy.</p>
-                        <div class="game-meta">
-                            <span>Wiek 16+</span>
-                            <span>Graczy 4-5</span>
-                        </div>
-                    </div>
-                </a>
-            </div> -->
-
-            <!-- Game Card 2 -->
-            <div class="game-card">
-                <a href="/scenarios/uwiezieni-w-glebinach/">
-                    <div class="game-image-container">
-                        <div class="game-image-placeholder" style="background-image: url('/assets/images/scenarios/nordlicht.jpg'); background-size: cover; background-position: center;"></div>
-                        </div>
-                    <div class="game-content">
-                        <h2 class="game-title">Uwięzieni w głębinach</h2>
-                        <p class="game-description">Tajne laboratorium Thule zostaje porzucone.<br/> Co czyha na okręcie podwodnym uwięzionym w głębinach?</p>
-                        <div class="game-meta">
-                            <span>Wiek 16+</span>
-                            <span>Graczy 3-4</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Game Card 3 -->
-            <!-- <div class="game-card">
-                <a href="game-single.html">
-                    <div class="game-image-container">
-                        <div class="game-image-placeholder" style="background-image: url('/assets/images/scenarios/dzungla.jpg'); background-size: cover; background-position: center;"></div>
-                        </div>
-                    <div class="game-content">
-                        <h2 class="game-title">Dżungla potepionych</h2>
-                        <p class="game-description">Amazonia, rok 1969. Jednostka FIST zostaje wysłana przez MI6 do regionu Madre de Dios, by odnaleźć zaginiony oddział SAS. Misja ratunkowa szybko przeradza się w koszmar - bo w sercu Madre de Dios czai się coś, co nie powinno istnieć.</p>
-                        <div class="game-meta">
-                            <span>Wiek 16+</span>
-                            <span>Graczy 3-4</span>
-                        </div>
-                    </div>
-                </a>
-            </div> -->
-
-        </div>
+  {% include "header.html" %}
+  <section class="page-hero scenarios"><h1>Scenariusze</h1></section>
+  <main class="games-container">
+    <div class="games-grid">
+      <article class="game-card"><a href="/scenarios/uwiezieni-w-glebinach/">
+        <div class="game-image-container"><div class="game-image-placeholder" style="background-image:url('/assets/images/scenarios/nordlicht.jpg')"></div></div>
+        <div class="game-content"><h2 class="game-title">Uwięzieni w głębinach</h2><p class="game-description">Tajne laboratorium Thule zostaje porzucone. Co czyha na okręcie podwodnym uwięzionym w głębinach?</p><div class="game-meta"><span>Zew Cthulhu</span><span>1 sesja</span><span>4 graczy</span></div></div>
+      </a></article>
+      <article class="game-card"><a href="/scenarios/wyspa-wrakow/">
+        <div class="game-image-container"><div class="game-image-placeholder" style="background-image:url('/assets/images/scenarios/wyspa.png')"></div></div>
+        <div class="game-content"><h2 class="game-title">Tajemnica Wyspy Wraków</h2><p class="game-description">Harfiarze wysyłają młodych rekrutów, by zbadali tajemniczą izolację wyspy i odkryli prawdę o tym, co się na niej wydarzyło.</p><div class="game-meta"><span>Dungeons & Dragons</span><span>2–3 sesje</span><span>3–4 graczy</span></div></div>
+      </a></article>
+      <article class="game-card"><div class="game-image-container"><div class="game-image-placeholder" style="background-image:url('/assets/images/scenarios/dzungla.png')"></div></div><div class="game-content"><h2 class="game-title">Dżungla potępionych</h2><p class="game-description">Amazonia, 1969. Misja odnalezienia zaginionego oddziału SAS szybko przeradza się w koszmar.</p><div class="game-meta"><span>Wkrótce</span></div></div></article>
     </div>
-
-    {% include "footer.html" %}
+  </main>
+  {% include "footer.html" %}
 </body>
 </html>
