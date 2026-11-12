@@ -66,6 +66,8 @@ body{min-height:100vh;display:flex;flex-direction:column}
 .site-footer{margin-top:auto;width:100%}
 @media(max-width:1100px){.about-band,.about-band h2,.about-band .eyebrow,.about-band-copy>p:not(.eyebrow),.about-band .text-link{color:#22231f}}
 .nav-links a:hover,.text-link:hover{color:inherit;text-decoration:underline;text-underline-offset:.2em}
+.nav-links a{padding-bottom:.25em}
+.footer-links a{padding-bottom:.25em}
 .journal-copy .text-link:hover{color:var(--green)}
 .about-band .text-link:hover{color:inherit}
 .footer-links a:hover,.blog-post-navigation a:hover{ text-decoration:underline;text-underline-offset:.2em}
