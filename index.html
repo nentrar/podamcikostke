@@ -1,99 +1,67 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    {% include "head.html" %}
-</head>
-<body>
-    {% include "header.html" %}
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Immersyjne opowieści</h1>
-            <p>Wyrusz w niezapomniane przygody w światach, które rodzą się z wyobraźni.</p>
-            <a href="/scenarios/" class="btn">Zajrzyj do scenariuszy</a>
+<head>{% include "head.html" %}</head>
+<body class="home-page">
+  {% include "header.html" %}
+  <main>
+    <section class="hero-home">
+      <div class="hero-shade"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">PODAM CI KOSTKĘ · AUTORSKIE PRZYGODY</p>
+        <h1>Autorskie<br>scenariusze RPG</h1>
+        <p class="hero-lead">Opowieści, światy i przygody,<br class="desktop-only"> które możesz przenieść na stół.</p>
+        <div class="hero-actions">
+          <a href="/scenarios/" class="button button-primary">Zobacz scenariusze <span>→</span></a>
+          <a href="/about/" class="button button-outline">O projekcie</a>
         </div>
+      </div>
     </section>
 
-    <section class="section section-dark" id="games">
-        <h2 class="section-title">One-shoty i kampanie z klimatem</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="card-image" style="background-image: url('/assets/images/scenarios/nordlicht.jpg'); background-size: cover; background-position: center;"></div>
-                <div class="card-content">
-                    <h3>Uwięzieni w głębinach</h3>
-                    <p>Jest rok 1944, a na wodach Bałtyku trwa właśnie Operacja Nordlicht. Dowódca okrętu podwodnego U-91 Koboldhai dostał zadanie ewakuacji tajnego laboratorium Stowarzyszenia Thule i transport tajemniczej skrzyni aż do  do położonego 900 mil dalej, portu w Flensburgu.</p>
-                    <a href="/scenarios/uwiezieni-w-glebinach/" class="card-link">Rzuć na inicjatywę →</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image" style="background-image: url('/assets/images/scenarios/wyspa.jpg'); background-size: cover; background-position: center;"></div>
-                <div class="card-content">
-                    <h3>Tajemnica wyspy Wraków</h3>
-                    <p>Tajemnicze zło przejeło kontrolę nad Wyspą Wraków. Zaniepokojeni tymi wydarzeniami Harfiarze postanowili działać. Wysyłają grupę swoich najmłodszych rekrutów, by zbadała sytuację i odkryła prawdę kryjącą się za nagłą izolacją wyspy.</p>
-                    <a href="#" class="card-link">Już wkrótce...</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image" style="background-image: url('/assets/images/scenarios/dzungla.jpg'); background-size: cover; background-position: center;"></div>
-                <div class="card-content">
-                    <h3>Dżungla potepionych</h3>
-                    <p>Amazonia, rok 1969. Jednostka FIST zostaje wysłana przez MI6 do regionu Madre de Dios, by odnaleźć zaginiony oddział SAS. Misja ratunkowa szybko przeradza się w koszmar - bo w sercu Madre de Dios czai się coś, co nie powinno istnieć.</p>
-                    <a href="#" class="card-link">Już wkrótce...</a>
-                </div>
-            </div>
-        </div>
+    <section class="featured-section section-wrap" id="scenarios">
+      <div class="section-heading">
+        <div><p class="eyebrow eyebrow-dark">WYBIERZ SWOJĄ HISTORIĘ</p><h2>Wybrane scenariusze</h2></div>
+        <a class="text-link" href="/scenarios/">Wszystkie scenariusze <span>→</span></a>
+      </div>
+      <div class="scenario-grid">
+        <a class="scenario-tile" href="/scenarios/uwiezieni-w-glebinach/">
+          <img src="/assets/images/scenarios/nordlicht.jpg" alt="Okręt podwodny na wzburzonym morzu">
+          <span class="tile-content"><span class="tile-kicker">ZEW CTHULHU · ONE-SHOT</span><strong>Uwięzieni w głębinach</strong></span>
+        </a>
+        <a class="scenario-tile" href="/scenarios/wyspa-wrakow/">
+          <img src="/assets/images/scenarios/wyspa.png" alt="Skalista wyspa otoczona morzem">
+          <span class="tile-content"><span class="tile-kicker">DUNGEONS & DRAGONS</span><strong>Tajemnica Wyspy Wraków</strong></span>
+        </a>
+        <a class="scenario-tile scenario-coming" href="/scenarios/">
+          <img src="/assets/images/scenarios/dzungla.png" alt="Mroczna dżungla spowita mgłą">
+          <span class="tile-content"><span class="tile-kicker">DELTA GREEN</span><strong>Dżungla potępionych</strong></span>
+        </a>
+      </div>
     </section>
 
-    <!-- Replace the section with id="about" with this Instagram feed section -->
+    <section class="journal-section">
+      <div class="journal-image"><img src="/assets/images/blog-workshop.png" alt="Przygotowania do sesji RPG przy stole"></div>
+      <div class="journal-copy">
+        <p class="eyebrow eyebrow-dark">ZA KULISAMI</p>
+        <h2>Jak powstają<br>moje scenariusze?</h2>
+        <p>Pomysły, inspiracje, warsztat i proces twórczy — zajrzyj za kulisy i zobacz, jak rodzą się nowe przygody.</p>
+        <a class="text-link" href="/blog/">Czytaj na blogu <span>→</span></a>
+      </div>
+    </section>
 
-<section class="section instagram-section" id="instagram">
-    <div class="instagram-container">
-        <div class="instagram-header">
-            <h2 class="section-title">Zanurz się w proces tworzenia przygód</h2>
+    <section class="about-band">
+      <img class="about-mountains" src="/assets/images/about-hero.png" alt="" aria-hidden="true">
+      <div class="about-band-inner">
+        <div class="about-band-copy">
+          <p class="eyebrow">O MNIE</p>
+          <h2>Tworzę przygody<br>dla Mistrzów Gry</h2>
+          <p>Projekt Podam Ci Kostkę to miejsce, w którym dzielę się autorskimi scenariuszami, pomysłami i inspiracjami do gier fabularnych.</p>
+          <a class="text-link text-link-light" href="/about/">Poznaj mnie <span>→</span></a>
         </div>
-
-        <div class="instagram-grid">
-            <!-- Instagram Post 1 -->
-            <div class="instagram-item">    
-                <div class="instagram-image" style="background-image: url('/assets/images/instagram/scenariusz.png');">
-                    <div class="instagram-overlay">
-                    </div>
-                </div>
-            </div> 
-            <!-- Instagram Post 2 -->
-            <div class="instagram-item">    
-                <div class="instagram-image" style="background-image: url('/assets/images/instagram/warsztat-1.png');">
-                    <div class="instagram-overlay">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Instagram Post 3 -->
-            <div class="instagram-item">    
-                <div class="instagram-image" style="background-image: url('/assets/images/instagram/warsztat-2.png');">
-                    <div class="instagram-overlay">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Instagram Post 4 -->
-            <a href="https://instagram.com/podam.ci.kostke" class="instagram-item instagram-item-qr" target="_blank" rel="noopener">
-                <div class="instagram-image" style="background-image: url('/assets/images/instagram/qr-code.jpg');">
-                    <div class="instagram-overlay">
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="instagram-cta">
-            <a href="https://instagram.com/podam.ci.kostke" class="btn" target="_blank" rel="noopener">
-                Obserwuj na Instagramie
-            </a>
-        </div>
-    </div>
-</section>
-
-    {% include "footer.html" %}
+        <div class="about-photo-wrap"><img src="/assets/images/about-polaroid.png" alt="Praca nad scenariuszami RPG"></div>
+      </div>
+      <div class="forest-line" aria-hidden="true"></div>
+    </section>
+  </main>
+  {% include "footer.html" %}
 </body>
+</html>
