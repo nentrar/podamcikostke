@@ -3,7 +3,7 @@ title: chaptr
 intro: Narzędzie do publikowania scenariuszy i nie tylko
 date: 2026-11-13
 category: Projekty
-featuredImage: /assets/images/blog/Od kodu do ilustrowanej opowieści.png
+featuredImage: /assets/images/blog/chaptr-example.png
 ---
 Na wstępie krótki follow-up z projektu "InteGRAcja RPG". Zakończyliśmy ostatnio drugie testowanie, było bardzo pozytywnie, pojawiły się nowe insighty i pierwsze mikro efekty. Jedna z osób, która przed rozpoczęciem naszych testów miała trudności z rozmawianiem, a będąc w roli "Dziennikarki" zaczęła podczas gry wychodzić z inicjatywą i dosłownie leadować całą grupę. Zdaję sobie sprawę, że na ten efekt na pewno miało wpływ więcej czynników ale i tak miło jest gdy widzi się coś takiego, co również potwierdził wychowawca placówki. 
 
@@ -11,7 +11,7 @@ Do opracowania zostały ostatnie szczegóły, zrobienie składu graficznego z wy
 
 # Skład graficzny scenariuszy
 
-W międzyczasie chciałem się podzielić jednym małym narzędziem, które sobie opracowałem aby móc sprawniej publikować swoje scenariusze. Jest nim [chaptr]([https://pypi.org/project/chaptr/](https://pypi.org/project/chaptr/) który w wielkim skrócie służy do tego, aby zmienić prosty tekst w Markdown, w gotowy PDF już do publikacji wedle stylu pod wybrany system RPG. Został on napisany w języku Python i korzysta się z niego z Terminala, ale jest to wygodne, bo potrzebujemy go w zasadzie dopiero gdy chcemy stworzyć szatę graficzną do naszego tekstu. 
+W międzyczasie chciałem się podzielić jednym małym narzędziem, które sobie opracowałem aby móc sprawniej publikować swoje scenariusze. Jest nim [chaptr](https://pypi.org/project/chaptr/) który w wielkim skrócie służy do tego, aby zmienić prosty tekst w Markdown, w gotowy PDF już do publikacji wedle stylu pod wybrany system RPG. Został on napisany w języku Python i korzysta się z niego z Terminala, ale jest to wygodne, bo potrzebujemy go w zasadzie dopiero gdy chcemy stworzyć szatę graficzną do naszego tekstu. 
 
 Ta jest aktualnie podstawowa, natomiast w tym momencie tworzę style pod wybrane systemy, tak aby zmiana z Dungeons and Dragons and Zew Cthulhu wymagała jedynie podmiany wybranego stylu... a nie ślęczenia wiele godzin nad składem. To częsciowy powód dlaczego do tej pory opublikowałem tutaj tylko jeden scenariusz. Przygotowywanie składu graficznego (który będzie nie tylko ścianą tekstu wyciągniętą z MS Word), zajmowało mi tak wiele czasu, że w efekcie tej niemałej frustracji powstał właśnie **chaptr**.
 
@@ -33,7 +33,7 @@ Zaczęły się kolejne eksperymenty. Obisidian, Twine, Reedly. Ostatecznie dosze
 
 W **chaptr** piszę scenariusz po prostu tekstem, jedynie że od początku nadaję mu formę tak jakby jego odbiorcą był czytelnik, a nie tylko ja. Następnie mogę po prostu skorzystać z tego co napisałem na własnej sesji i dopracować. A gdy skończę - wybieram sobie styl w którym chcę opublikować scenariusz, składam z tego plik html, a następnie za pomocą WeasyPrint (inne narzędzie Python), robię z tego gotowy PDF.
 
-Jest to prosty workflow, na którym mi zależało, a którego nigdzie nie mogłem znaleźć. Jeśli również szukasz podobnego narzędzia, które może pomóc Ci w publikowaniu scenariuszu - zapraszam do korzystania. Na [pypi](https://pypi.org/project/chaptr/](https://pypi.org/project/chaptr/) znajdują się wszystkie informacje jak sobie to narzędzie pobrać i zainstalować.   
+Jest to prosty workflow, na którym mi zależało, a którego nigdzie nie mogłem znaleźć. Jeśli również szukasz podobnego narzędzia, które może pomóc Ci w publikowaniu scenariuszu - zapraszam do korzystania. Na [pypi](https://pypi.org/project/chaptr/) znajdują się wszystkie informacje jak sobie to narzędzie pobrać i zainstalować.   
 Jest za darmo, dla każdego, na licencji MIT.
 
 I niedługo, korzystając z niego, postaram się opublikować tutaj "Tajemnicę Wyspy Wraków", na podstawie której dopracowuję teraz styl "dungeon", pod przygody w Dungeons and Dragons ;)
